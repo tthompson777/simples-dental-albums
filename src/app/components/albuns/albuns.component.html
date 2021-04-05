@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="posts">
+
+    <mat-card *ngFor="let rowAlbums of listAllAlbums let i = index" class="post" routerLink="albunslist"
+      (click)="givePhotosToAlbums(rowAlbums.id)">
+
+      <mat-card-content>
+        <img src="https://source.unsplash.com/random/200x200?sig={{ i + 1 }}">
+      </mat-card-content>
+
+      <mat-card-actions class="album-actions-title">
+        <div class="title-container-cards">
+          <h3 [title]="rowAlbums.title">{{ rowAlbums.title }}</h3>
+        </div>
+
+        <div class="buttons-container-cards">
+          <button mat-mini-fab color="primary" title="Abrir">
+            <mat-icon>open_in_new</mat-icon>
+          </button>
+
+          <button mat-mini-fab color="accent" title="Compartilhar">
+            <mat-icon>share</mat-icon>
+          </button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

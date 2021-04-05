@@ -1,0 +1,38 @@
+<div class="container-home center-text">
+
+  <mat-card class="post-info-home center-text">
+    <mat-card-content>
+      <div class="card-photo">
+        <img src="./../../assets/img/user_avatarpng.png" alt="Foto Usuário">
+      </div>
+      <h1>Olá {{currentUser.firstName}}!</h1>
+      <p>O que deseja fazer?</p>
+    </mat-card-content>
+  </mat-card>
+
+    <div class="posts">
+      <mat-card class="post card-home-green" [routerLink]="['/albuns']">
+        <mat-card-content>
+          <mat-icon>auto_stories</mat-icon>
+          <h2>Ver Albums</h2>
+         </mat-card-content>
+
+      </mat-card>
+
+      <mat-card class="post card-home-purple" [routerLink]="['/register']">
+        <mat-card-content>
+          <mat-icon>person_add</mat-icon>
+          <h2>Cadastrar Usuário</h2>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="post card-home-blue" [routerLink]="['/login']">
+        <mat-card-content>
+          <mat-icon>exit_to_app</mat-icon>
+          <h2>Sair</h2>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+
+</div>

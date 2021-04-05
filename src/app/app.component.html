@@ -1,0 +1,17 @@
+<!-- Cabeçalho -->
+<mat-toolbar color="primary" class="app-header">
+
+  <div><img src="../assets/img/logo_branca.png" alt="Logo" class="navbar-brand" [routerLink]="['/']"></div>
+
+  <span class="nav-tool-items">
+
+    <span *ngIf="currentUser" class="mr-10 fs-14">Olá {{ currentUser.firstName}}</span>
+
+    <button *ngIf="currentUser" mat-flat-button [routerLink]="['/login']" routerLinkActive="active">
+      <mat-icon class="icon-button-logout">logout</mat-icon> Sair
+    </button>
+
+  </span>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

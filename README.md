@@ -1,2 +1,3 @@
-# simples-dental-albums
-Projeto com listagem de albums via API, Login salvo no LocalStorage, Material Design, Angular 10, e outros.
+# AngularMaterialLoginTemplate
+
+[Create Login UI Template with Angular 8/9/10 and Material Design](https://www.positronx.io/create-login-ui-template-with-angular-8-material-design/)

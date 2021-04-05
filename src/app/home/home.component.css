@@ -1,0 +1,44 @@
+.container-home {
+  max-width: 800px;
+  min-height: 76vh;
+  margin: 0 auto;
+  padding: 69px 0;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.post{
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 3px solid transparent;
+}
+
+.post:hover{
+  border-bottom: 3px solid rgb(102, 102, 102);
+}
+
+.post-info-home {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card-photo {
+  float: left;
+}
+.card-photo img {
+  width: 65px;
+}
+
+.card-home-green {
+  background-color: #5cb75c;
+}
+.card-home-purple {
+  background-color: #673ab7;
+}
+.card-home-blue {
+  background-color: #5ab3f1;
+}

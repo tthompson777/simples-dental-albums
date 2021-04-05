@@ -1,0 +1,81 @@
+.mat-card-actions {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%), 0 2px 5px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%), 0 2px 5px 0 rgb(0 0 0 / 10%);
+}
+
+.album-actions-title {
+  opacity: 0;
+  background-color: rgb(255 255 255 / 90%);
+  text-align: center;
+  transition: opacity .4s;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 1%;
+  left: 1%;
+  cursor: pointer;
+}
+
+.post:hover .album-actions-title {
+  opacity: 1;
+}
+
+.album-actions-title h3{
+  display: block;
+  width: 151px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mat-card {
+  padding: 9px;
+}
+
+.buttons-container-cards, .title-container-cards {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  margin-top: 25px;
+}
+
+.buttons-container-cards button {
+  margin-right: 10px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.post .title-album {
+  text-align: center;
+}
+
+.post {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid rgba(204, 204, 204, 0.37);
+  transition: transform 100ms ease-in-out;
+}
+
+.post:hover {
+  transform: scale(1.05);
+}
+
+.post img {
+  max-width: 100%;
+}
+
+.posts-content {
+  padding: 20px;
+}
