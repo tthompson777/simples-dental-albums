@@ -1,3 +1,5 @@
-# AngularMaterialLoginTemplate
+# Características
+Criado com Angular 10, Material Design, Recurso de Login salvo no LocalStorage, Listagem de Albums, Layout Atraente.
 
-[Create Login UI Template with Angular 8/9/10 and Material Design](https://www.positronx.io/create-login-ui-template-with-angular-8-material-design/)
+# Instruções
+Depois de baixar o projeto, execute npm install, e em seguida ng serve, ao final, estará disponçivel em http://localhost:4200.
